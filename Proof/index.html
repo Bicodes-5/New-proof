@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bicodes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="m-0">
+
+  <!-- Fixed Navbar -->
+  <header class="fixed-top bg-black text-white px-4 py-3 d-flex justify-content-between align-items-center">
+    <div class="fs-4 fw-bold logo">B</div>
+    <div class="d-none d-md-flex gap-4">
+      <a href="#hero" class="text-white text-decoration-none">Home</a>
+      <a href="#about" class="text-white text-decoration-none">About</a>
+      <a href="#latest-works" class="text-white text-decoration-none">Projects</a>
+      <a href="#contact" class="text-white text-decoration-none">Contact</a>
+    </div>
+    <!-- Hamburger Menu -->
+    <button class="btn btn-outline-light d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <i class="bi bi-list"></i>
+    </button>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+      <a href="#hero" class="text-white text-decoration-none" data-bs-dismiss="offcanvas">Home</a>
+      <a href="#about" class="text-white text-decoration-none" data-bs-dismiss="offcanvas">About</a>
+      <a href="#latest-works" class="text-white text-decoration-none" data-bs-dismiss="offcanvas">Projects</a>
+      <a href="#contact" class="text-white text-decoration-none" data-bs-dismiss="offcanvas">Contact</a>
+      
+
+      <!-- Social Icons for Mobile (visible only on mobile) -->
+      <div class="d-flex gap-3 mt-4 d-md-none">
+        <a href="https://wa.me/2347083055842" target="_blank" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/bicodes_5" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Horizontal Scroll Container -->
+  <main class="horizontal-scroll" id="mainSlider">
+
+    <!-- Hero Section -->
+    <section class="section bg-black text-white d-flex flex-column justify-content-center" id="hero">
+      <div class="d-flex align-items-center justify-content-between px-4 flex-wrap">
+        <!-- Left side -->
+        <div class="d-flex align-items-center gap-4 flex-wrap justify-content-center">
+          <!-- Social Icons (visible only on md and up) -->
+          <div class="d-none d-md-flex flex-column align-items-center gap-3 ms-1" style="top: 20%; margin-bottom: 300px;">
+            <a href="https://wa.me/2347083055842" target="_blank" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/bicodes_5" target="_blank" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+          </div>
+
+          <div class="rotated-box"></div>
+        </div>
+        <!-- Right side -->
+        <div class="hero-content">
+          <h1 class="display-5 fw-semibold">
+            Web developer &amp;<br>
+            <small class="fw-light fst-italic">I am <strong>Bicode</strong></small>
+          </h1>
+          <hr class="hero-divider" />
+          <a href="#contact" class="btn btn-outline-light hero-cta">Let's work together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section bg-black text-white d-flex justify-content-center align-items-center" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text on the left -->
+          <div class="col-md-6 text-start about-content mb-4 mb-md-0">
+            <h2 class="display-4">About Me</h2>
+            <hr class="hero-divider" />
+            <p class="fs-5">
+              Hi, I’m Bello, a web developer with 2 years of experience 
+              turning ideas into functional, user-friendly websites. I’m
+              a problem solver at heart, now focused on building smart
+              solutions that solve real challenges and drive results.
+              Whether it’s streamlining workflows or boosting conversions,
+              I build with purpose and impact. 
+            </p>
+    
+            <a href="#contact" class="btn btn-outline-light hero-cta">Let's build results</a>
+          </div>
+    
+          <!-- Rotated box on the right -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div class="rotated-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Work Section -->
+    <section class="section bg-black text-white d-flex pt-5 align-items-center" id="latest-works">
+      <div class="container position-relative">
+        <div class="row justify-content-between">
+          <!-- Left: Cards and Button -->
+          <div class="col-md-6 mt-2 d-flex flex-column align-items-center align-items-md-start gap-4">
+            <div class="d-flex gap-4">
+              <div class="work-card low"></div>
+              <div class="work-card high"></div>
+            </div>
+            <a href="#works" class="btn btn-outline-light view-works-btn mt-5">View works</a>
+          </div>
+    
+          <!-- Right: Header positioned higher -->
+          <div class="col-md-6 position-relative">
+            <div class="latest-works-text text-start">
+              <h2 class="display-6 mb-1">Latest works</h2>
+              <hr class="hero-divider" />
+              <p class="fs-6 text-muted">some of my works</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-black text-white pt-5">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <!-- Left Column: Header + Form -->
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start px-5 pt-5">
+            <div class="contact-inner w-100">
+              <h2 class="display-5 mb-2">Connect with me</h2>
+              <hr class="divider mb-4">
+              <form id="contactForm" action="https://formsubmit.co/fxbello55@gmail.com" method="POST">
+                <!-- Optional: Disable CAPTCHA if you want -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Optional: Custom success redirect -->
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+              
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+              
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+                </div>
+              
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+              
+                <button type="submit" class="btn btn-dark mt-2" id="submitBtn">
+                  Submit
+                </button>
+              </form>
+              
+              
+              
+            </div>
+          </div>
+    
+          <!-- Right Column: Rotated Box -->
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="rotated-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="custom-toast" class="custom-toast"></div>
+
+  </main>
+
+  <!-- Scroll Buttons -->
+  <button class="scroll-btn left" id="scrollLeft"><i class="bi bi-chevron-left"></i></button>
+  <button class="scroll-btn right" id="scrollRight"><i class="bi bi-chevron-right"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- GSAP core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', () => {
+      console.log('Button clicked!');
+    });
+  </script>
+  
+
+ <!-- ScrollTrigger plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
